@@ -44,7 +44,7 @@ The shell is designed for Linux / Unix-based systems and is implemented using lo
 
 ## Project Structure
 ```bash
-DragonShell/
+UnixShell/
 ├── src/
 │   └── dragonshell.c      # Main shell implementation
 ├── README.md              # Project documentation
