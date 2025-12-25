@@ -43,6 +43,13 @@ The shell is designed for Linux / Unix-based systems and is implemented using lo
 /bin/ls | /usr/bin/wc
 ```
 
+# Design Notes
+- Uses a linked list to track jobs
+- Avoids unsafe operations inside signal handlers
+- Reaps child processes using waitpid() with non-blocking flags
+- Each job runs in its own process group
+- Terminal control is correctly transferred for foreground jobs
+
 ## Project Structure
 ```bash
 UnixShell/
@@ -78,13 +85,5 @@ make
 Welcome to Dragon Shell!
 
 dragonshell >
-
 ```
-You will be presented with a prompt (> ) where you can enter commands.
-
-# Design Notes
-- Uses a linked list to track jobs
-- Avoids unsafe operations inside signal handlers
-- Reaps child processes using waitpid() with non-blocking flags
-- Each job runs in its own process group
-- Terminal control is correctly transferred for foreground jobs
+You will be presented with a prompt (dragonshell >) where you can enter commands.
