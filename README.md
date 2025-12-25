@@ -15,8 +15,6 @@ This project demonstrates core operating system concepts such as:
 
 The shell is designed for Linux / Unix-based systems and is implemented using low-level POSIX system calls.
 
----
-
 ## Features
 
 ### Built-in Commands
@@ -45,7 +43,7 @@ The shell is designed for Linux / Unix-based systems and is implemented using lo
 /bin/ls | /usr/bin/wc
 ```
 
-# Design Notes
+## Design Notes
 - Uses a linked list to track jobs
 - Avoids unsafe operations inside signal handlers
 - Reaps child processes using waitpid() with non-blocking flags
