@@ -1,4 +1,4 @@
-# Dragon Shell 🐉
+# Dragon Shell
 
 ## Overview
 
@@ -42,3 +42,49 @@ The shell is designed for Linux / Unix-based systems and is implemented using lo
 - Supports **single pipe** execution:
   ```bash
   /bin/ls | /usr/bin/wc
+
+## Project Structure
+```bash
+DragonShell/
+├── src/
+│   └── dragonshell.c      # Main shell implementation
+├── README.md              # Project documentation
+├── Makefile               # Build configuration (if present)
+```
+
+## Installation
+
+### Prerequisites
+
+- C compiler (e.g., `gcc`)
+- Unix-based OS (Linux, macOS, or WSL on Windows)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/nicehamburger/UnixShell
+cd UnixShell
+```
+
+### Build the project using make
+```bash
+make
+```
+
+## Usage
+
+```bash
+./dragonshell
+Welcome to Dragon Shell!
+
+dragonshell >
+
+```
+You will be presented with a prompt (> ) where you can enter commands.
+
+# Design Notes
+- Uses a linked list to track jobs
+- Avoids unsafe operations inside signal handlers
+- Reaps child processes using waitpid() with non-blocking flags
+- Each job runs in its own process group
+- Terminal control is correctly transferred for foreground jobs
