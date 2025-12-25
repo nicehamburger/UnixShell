@@ -55,8 +55,8 @@ The shell is designed for Linux / Unix-based systems and is implemented using lo
 UnixShell/
 ├── src/
 │   └── dragonshell.c      # Main shell implementation
-├── README.md              # Project documentation
 ├── Makefile               # Build configuration
+├── README.md              # Project documentation
 ```
 
 ## Installation
