@@ -2,8 +2,7 @@
 
 ## Overview
 
-**Dragon Shell** is a custom Unix-like command-line shell written in C.  
-It supports interactive command execution, job control, signal handling, input/output redirection, background processes, and single-stage piping.
+**Dragon Shell** is a custom Unix-like command-line shell written in C. It supports interactive command execution, job control, signal handling, input/output redirection, background processes, and single-stage piping.
 
 This project demonstrates core operating system concepts such as:
 - Process creation and management
