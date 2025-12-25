@@ -48,7 +48,7 @@ UnixShell/
 ├── src/
 │   └── dragonshell.c      # Main shell implementation
 ├── README.md              # Project documentation
-├── Makefile               # Build configuration (if present)
+├── Makefile               # Build configuration
 ```
 
 ## Installation
