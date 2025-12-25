@@ -39,8 +39,9 @@ The shell is designed for Linux / Unix-based systems and is implemented using lo
 
 ### Pipes
 - Supports **single pipe** execution:
-  ```bash
-  /bin/ls | /usr/bin/wc
+```bash
+/bin/ls | /usr/bin/wc
+```
 
 ## Project Structure
 ```bash
